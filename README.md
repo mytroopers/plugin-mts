@@ -29,6 +29,15 @@ floors: from -1 to 10 (-1 is the pavement)
 volume: m^3  
 type: "cardboard", "normal", "heavy", "super_heavy"
 
+## Add Stuffs
+		mts.run.addStuff(stuffs: Array)
+*Add multiple stuffs to the run*  
+stuffs: {name: String, step: Int, depositStep: Int, volume: Float, type: String, nb: Int}
+
+## Get Stuffs
+		mts.run.getStuffs()
+*Get run's stuffs*
+
 ## Price
 		mts.run.price(callback: Function(response))
 *Get the price of the run if all steps and stuffs are set* - callback response = {tt: Float, pp1: Float, pp2: Float}

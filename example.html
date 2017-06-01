@@ -33,7 +33,24 @@
                 * Add two stuffs from adress 1 to address 2
                 */
                 mts.run.addStuff("tapis", 0, 1, 2.0, "normal", 3);
-                mts.run.addStuff("armoire normande", 0, 1, 3.0, "super_heavy", 1);
+                mts.run.addStuffs([
+                    {
+                        name: "armoire normande",
+                        step: 0,
+                        depositStep: 1,
+                        volume: 3.0,
+                        type: "super_heavy",
+                        nb: 1
+                    },
+                    {
+                        name: "lit",
+                        step: 0,
+                        depositStep: 1,
+                        volume: 2.0,
+                        type: "heavy",
+                        nb: 1
+                    }
+                ]);
 
                 /*
                 * Get the price
